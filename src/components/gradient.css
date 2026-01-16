@@ -1,0 +1,52 @@
+:root {
+  --punch-red: #e63946ff;
+  --honeydew: #f1faeeff;
+  --frosted-blue: #a8dadcff;
+  --cerulean: #457b9dff;
+  --oxford-navy: #1d3557ff;
+}
+
+/* Container */
+.angular-bg {
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;   /* 🔥 key fix */
+  overflow: hidden;
+}
+
+
+/* Static angular gradient */
+.angular-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: conic-gradient(
+    from 180deg,
+    var(--oxford-navy),
+    var(--cerulean),
+    var(--cerulean),
+    var(--oxford-navy)
+  );
+}
+
+/* Depth overlay (keep this – it looks good) */
+.angular-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.25),
+    rgba(0, 0, 0, 0.6)
+  );
+  pointer-events: none;
+}
+
+/* Content layer */
+.angular-content {
+  position: relative;
+  z-index: 2;
+  color: var(--honeydew);
+}
+

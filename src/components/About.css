@@ -1,0 +1,60 @@
+.about {
+  max-width: 900px;
+}
+
+/* Card wrapper */
+.about-card {
+  margin-top: 40px;
+  padding: 36px;
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* Paragraphs */
+.about-text {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  opacity: 0.9;
+  margin-bottom: 18px;
+}
+
+/* Tech stack pills */
+.about-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 28px 0;
+}
+
+.about-stack span {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Goal text */
+.about-goal {
+  margin-top: 24px;
+  font-size: 0.95rem;
+  opacity: 0.8;
+  font-style: italic;
+}
+.about-education strong {
+  font-weight: 600;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 26px;
+  }
+
+  .about-text {
+    font-size: 1rem;
+  }
+}
