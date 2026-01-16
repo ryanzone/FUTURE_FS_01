@@ -21,6 +21,12 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+export const metadata = {
+  title: "Ryan John | Portfolio",
+  description: "Frontend Developer & AIML Student",
+};
+
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
